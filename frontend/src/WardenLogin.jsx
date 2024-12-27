@@ -16,7 +16,7 @@ const WardenLogin = () => {
             setInputError("Please fill input fields");
             return;
         }
-        axios.post('http://localhost:3002/wardenlogin', { email, password })
+        axios.post('https://hms-backend-zq7j.onrender.com/wardenlogin', { email, password })
             .then(result => {
                 if (result.data === "success") {
                     localStorage.setItem('user', email); 
