@@ -3,7 +3,7 @@ import axios from 'axios'
 function Users55 ()  {
 const[users,setusers]=useState([]) 
 useEffect(()=>{
-    axios.get('http://localhost:3002/users5')
+    axios.get('https://hms-backend-zq7j.onrender.com/users5')
     .then(result=>setusers(result.data))
     .catch(err=>console.log(err))
 },[])
