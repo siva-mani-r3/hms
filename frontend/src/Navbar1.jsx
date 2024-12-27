@@ -51,7 +51,7 @@ const Navbar2 = () => {
     padding: '5px', 
     fontFamily:"san-serif"
 }}>
-  Welcome__{name}
+  Welcome__{name?.substring(0,8)}
 </span>
 
             <Button variant="outline-danger" style={{ "marginLeft": "10px" }} onClick={Logout}>Logout</Button>
