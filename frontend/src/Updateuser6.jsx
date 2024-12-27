@@ -9,7 +9,7 @@ const Updateuser6 = () => {
     const[rollno,setroll]=useState()
     const navigate = useNavigate()
     useEffect(()=>{
-        axios.get('http://localhost:3002/users6/getUser6/'+id)
+        axios.get('https://hms-backend-zq7j.onrender.com/users6/getUser6/'+id)
         .then(result=>{console.log(result)
             setName(result.data.name)
             setroll(result.data.rollno)
@@ -19,7 +19,7 @@ const Updateuser6 = () => {
     },[])
     const Update=(e)=>{
         e.preventDefault();
-        axios.put('http://localhost:3002/update6/'+id,{name,rollno})
+        axios.put('https://hms-backend-zq7j.onrender.com/update6/'+id,{name,rollno})
         .then(result=>{console.log(result)
             navigate('/users6')
         })
