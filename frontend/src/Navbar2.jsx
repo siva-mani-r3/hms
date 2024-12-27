@@ -50,7 +50,7 @@ const Navbar2 = () => {
     textTransform: 'uppercase', 
     padding: '5px', 
 }}>
-  Welcome__{name}
+  Welcome__{name?.substring(0,8)}
 </span>
 
             <Button variant="outline-danger" style={{ "marginLeft": "10px" }} onClick={Logout}>Logout</Button>
