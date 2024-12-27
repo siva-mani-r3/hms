@@ -4,14 +4,14 @@ import axios from 'axios'
 function Users3 ()  {
 const[users3,setusers3]=useState([]) 
 useEffect(()=>{
-    axios.get('http://localhost:3002/users3')
+    axios.get('https://hms-backend-zq7j.onrender.com/users3')
     .then(result=>setusers3(result.data))
     .catch(err=>console.log(err))
 
 
 },[])
 const handleDelete =(id)=>{
-    axios.delete('http://localhost:3002/deleteUser3/'+id)
+    axios.delete('https://hms-backend-zq7j.onrender.com/deleteUser3/'+id)
     .then(res=>{console.log(res)
 window.location.reload()})
     .catch(err=>console.log(err))
