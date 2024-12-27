@@ -28,7 +28,7 @@ const Signup2 = () => {
             return;
         }
 
-        axios.post('http://localhost:3002/wardenregister', { name, email, password })
+        axios.post('https://hms-backend-zq7j.onrender.com/wardenregister', { name, email, password })
             .then(result => {
                 if (result.data.message === "Email already exists") {
                     setMessage("Email already exists.");
