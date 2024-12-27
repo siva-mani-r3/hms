@@ -9,14 +9,14 @@ const Availablerooms = () => {
     const fetchAvailableRooms = async () => {
       try {
         const responses = await Promise.all([
-          axios.get('http://localhost:3002/users1'),
-          axios.get('http://localhost:3002/users2'),
-          axios.get('http://localhost:3002/users3'),
-          axios.get('http://localhost:3002/users4'),
-          axios.get('http://localhost:3002/users5'),
-          axios.get('http://localhost:3002/users6'),
-          axios.get('http://localhost:3002/users7'),
-          axios.get('http://localhost:3002/users8')
+          axios.get('https://hms-backend-zq7j.onrender.com/users1'),
+          axios.get('https://hms-backend-zq7j.onrender.com/users2'),
+          axios.get('https://hms-backend-zq7j.onrender.com/users3'),
+          axios.get('https://hms-backend-zq7j.onrender.com/users4'),
+          axios.get('https://hms-backend-zq7j.onrender.com/users5'),
+          axios.get('https://hms-backend-zq7j.onrender.com/users6'),
+          axios.get('https://hms-backend-zq7j.onrender.com/users7'),
+          axios.get('https://hms-backend-zq7j.onrender.com/users8')
         ]);
 
         const allData = responses.flatMap((response, index) =>
