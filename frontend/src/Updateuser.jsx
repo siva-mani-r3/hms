@@ -19,7 +19,7 @@ const Updateuser = () => {
     })
     const Update=(e)=>{
         e.preventDefault();
-        axios.put('http://localhost:3002/update/'+id,{name,rollno})
+        axios.put('https://hms-backend-zq7j.onrender.com/update/'+id,{name,rollno})
         .then(result=>{console.log(result)
             navigate('/users1')
         })
