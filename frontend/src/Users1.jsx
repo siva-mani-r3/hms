@@ -4,14 +4,14 @@ import axios from 'axios'
 function Users1 ()  {
 const[users,setusers]=useState([]) 
 useEffect(()=>{
-    axios.get('https://hms-backend-zq7j.onrender.com/users1')
+    axios.get('https://hms-api-six.vercel.app/users1')
     .then(result=>setusers(result.data))
     .catch(err=>console.log(err))
 
 
 },[])
 const handleDelete =(id)=>{
-    axios.delete('https://hms-backend-zq7j.onrender.com/deleteUser1/'+id)
+    axios.delete('https://hms-api-six.vercel.app/deleteUser1/'+id)
     .then(res=>{console.log(res)
 window.location.reload()})
     .catch(err=>console.log(err))
