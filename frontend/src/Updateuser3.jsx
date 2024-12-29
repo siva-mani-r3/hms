@@ -9,7 +9,7 @@ const Updateuser3 = () => {
     const[rollno,setroll]=useState()
     const navigate = useNavigate()
     useEffect(()=>{
-        axios.get('https://hms-backend-zq7j.onrender.com/users3/getUser3/'+id)
+        axios.get('https://hms-api-six.vercel.app/users3/getUser3/'+id)
         .then(result=>{console.log(result)
             setName(result.data.name)
             setroll(result.data.rollno)
