@@ -116,7 +116,7 @@ const checkRoomVacancies = async () => {
     }
 };
 
-setInterval(checkRoomVacancies, 120000); 
+setInterval(checkRoomVacancies, 60000); 
 
 app.post('/register', (req, res) => {
     const { email, password } = req.body;
