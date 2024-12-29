@@ -75,7 +75,7 @@ const Navbar2 = () => {
                 fontFamily: "sans-serif",
               }}
             >
-              Welcome__{name?.substring(0, 8)}
+              Welcome__{name?.substring(0, 15)}
             </span>
 
             <Button
