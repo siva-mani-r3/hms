@@ -4,7 +4,11 @@ const cors = require("cors");
 const nodemailer = require('nodemailer'); 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors( {
+    origin:["https://hms-front-lake.vercel.app"],
+    methods:["POST","GET","PUT","DELETE"],
+    credentials:true
+}));
 const StudentModel = require('./models/Student');
 const StudentModel1 = require('./models/Student2');
 const UserModel = require('./models/Users1');
