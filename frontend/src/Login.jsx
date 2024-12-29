@@ -17,7 +17,7 @@ const Login = () => {
             setInputError("Please fill input fields");
             return;
         }
-        axios.post('https://hms-backend-zq7j.onrender.com/login', { email, password })
+        axios.post('https://hms-api-six.vercel.app/login', { email, password })
             .then(result => {
                 if (result.data === "success") {
                     localStorage.setItem('user', email);  // Store email (or username) in localStorage
