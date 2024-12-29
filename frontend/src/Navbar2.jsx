@@ -74,7 +74,7 @@ const Navbar2 = () => {
                 padding: "5px",
               }}
             >
-              Welcome__{name?.substring(0, 8)}
+              Welcome__{name?.substring(0, 15)}
             </span>
 
             <Button
