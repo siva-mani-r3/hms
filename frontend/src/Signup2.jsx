@@ -100,7 +100,7 @@ const Signup2 = () => {
                     {message && <p className="mt-1" style={{ color: "red" }}>{message}</p>}
                     {serverError && <p className="text-danger mt-1">Unable to reach servers.<br />Please try again later.</p>}
                     
-                </center>
+                </center><br/>
                 <Link to="/wardenlogin">
                     <button className='btn btn-default border w-100 bg-light rounded-2'>Login</button>
                 </Link>
