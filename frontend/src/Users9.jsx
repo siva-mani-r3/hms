@@ -10,14 +10,14 @@ function Users9() {
         const fetchAllUsers = async () => {
             try {
                 const responses = await Promise.all([
-                    axios.get('https://hms-backend-zq7j.onrender.com/users1'),
-                    axios.get('https://hms-backend-zq7j.onrender.com/users2'),
-                    axios.get('https://hms-backend-zq7j.onrender.com/users3'),
-                    axios.get('https://hms-backend-zq7j.onrender.com/users4'),
-                    axios.get('https://hms-backend-zq7j.onrender.com/users5'),
-                    axios.get('https://hms-backend-zq7j.onrender.com/users6'),
-                    axios.get('https://hms-backend-zq7j.onrender.com/users7'),
-                    axios.get('https://hms-backend-zq7j.onrender.com/users8')
+                    axios.get('https://hms-api-six.vercel.app/users1'),
+                    axios.get('https://hms-api-six.vercel.app/users2'),
+                    axios.get('https://hms-api-six.vercel.app/users3'),
+                    axios.get('https://hms-api-six.vercel.app/users4'),
+                    axios.get('https://hms-api-six.vercel.app/users5'),
+                    axios.get('https://hms-api-six.vercel.app/users6'),
+                    axios.get('https://hms-api-six.vercel.app/users7'),
+                    axios.get('https://hms-api-six.vercel.app/users8')
                 ]);
 
                 const allData = responses.flatMap((response, index) =>
