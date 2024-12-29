@@ -3,7 +3,7 @@ import axios from 'axios'
 function Users88 ()  {
 const[users,setusers]=useState([]) 
 useEffect(()=>{
-    axios.get('https://hms-backend-zq7j.onrender.com/users8')
+    axios.get('https://hms-api-six.vercel.app/users8')
     .then(result=>setusers(result.data))
     .catch(err=>console.log(err))
 },[])
