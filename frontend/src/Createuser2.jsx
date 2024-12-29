@@ -7,7 +7,7 @@ const Createuser2 = () => {
     const navigate = useNavigate()
     const Submit=(e)=>{
         e.preventDefault();
-        axios.post('https://hms-backend-zq7j.onrender.com/create2',{name,rollno})
+        axios.post('https://hms-api-six.vercel.app/create2',{name,rollno})
         .then(result=>{console.log(result)
             navigate('/users2')
         })
